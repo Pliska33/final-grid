@@ -1,15 +1,14 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
 * {
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 .nav {
     width: 90%;
     height: 100px;
-    background-color: rgb(201, 152, 247);
+    /*background-color: rgb(201, 152, 247);*/
     margin: 0px auto 0px auto;
 }
 
@@ -23,7 +22,7 @@ li, a {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     align-items: center;
     padding-left: 50px;
 }
@@ -43,13 +42,22 @@ header {
     margin-left: 20px;
 }
 
+.button-black {
+    color: #ffffff;
+    background-color: black;
+
+    padding: 5px 25px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
 .contenedor {
     width: 90%;
     height: 1280px;
     /*outline: 2px solid;*/
     margin: 0px auto 0px auto;
     margin-top: 0px;
-    background-color: aqua;
+    /*background-color: aqua;*/
 
     display: grid;
     grid-template-columns: 50% 50%;
@@ -66,9 +74,9 @@ header {
 .box1 h1{
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 5px;
     text-align: center;
     line-height: 80px; 
 }
@@ -76,14 +84,16 @@ header {
 .box1 p {
     color: white;
     font-family: 'Inter', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px ;
     letter-spacing: 0.1em;
     text-align: center;
 }
 
-.boton-aprende{
+.link-aprende{
     color: white;
+    font-weight: 300;
+    font-size: 20px;
     text-decoration: underline;
 }
 
@@ -106,17 +116,15 @@ header {
 }
 
 .box3 h1 {
+
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-align: center;  
-    
-    height: 140px;
-    width: 642px;
-    left: 727px;
-    top: 589px;
+    font-weight: 600;
+    font-size: 40px ;
+    letter-spacing: 10px;
+
+    text-align: center;
+    width: 640px;
 }
 
 .box3 p{
@@ -129,9 +137,11 @@ header {
 }
 
 .button-3 {
+    color: #ffffff;
+    width: 160px;
+    height: 30px;
     border-radius: 30px;
     background-color: transparent;
-
 }
 
 .box4 {
@@ -143,9 +153,11 @@ header {
 .box4 h1 {
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 40px ;
+    letter-spacing: 10px;
+    text-align: center;
+    width: 680px;
 }  
 
 .box4 p{
@@ -158,6 +170,9 @@ header {
 }
 
 .button-4 {
+    color: #ffffff;
+    width: 160px;
+    height: 30px;
     border-radius: 30px;
     background-color: transparent;
 }
@@ -165,7 +180,7 @@ header {
 .textos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 
 hr {
@@ -181,12 +196,27 @@ hr {
     margin-top: 25px;      
     padding-left: 50px;
     text-align: left;
+
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
 }
 
 footer {
     width: 90%;
-    justify-content: flex-start;    
+    /*justify-content: flex-start;*/ 
+    justify-items:left;   
     padding-left: 50px;
     margin-top: 20px;
 }
 
+.rrss, li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.rrss {
+    padding-left: 50px;
+}
